@@ -1,0 +1,15 @@
+<div class="jumbotron" ng-controller="LoginCtrl"
+	data-ng-init="preInitialize()">
+	<form class="form-horizontal" role="form">
+		<h2 class="form-signin-heading">Please login</h2>
+		<input type="text" class="form-control" name="username" id="username"  ng-model="loginData.username" 
+			placeholder="Username" ng=/> <input type="password" class="form-control"
+			name="password" id="password" placeholder="Password"  ng-model="loginData.password"/>
+		<div class="checkbox">
+			<label> <input type="checkbox" value="remember-me">
+				Remember me
+			</label>
+		</div>
+		<button class="btn btn-lg btn-primary btn-block" ng-click="loginSubmit()">Login</button>
+	</form>
+</div>
